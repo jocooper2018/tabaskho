@@ -1,0 +1,406 @@
+
+/* Polices */
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url('./Polices_woff/coolvetica_woff/coolveticarg.woff') format('woff'),
+         url('./Polices_woff/coolvetica_woff/coolveticarg.woff2') format('woff2');
+}
+  
+@font-face {
+    font-family: "Exo";
+    src: url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff') format('woff'),
+         url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff2') format('woff2');
+}
+  
+@font-face {
+    font-family: "IniSans";
+    src: url('./Polices_woff/ini-sans_woff/IniSans.woff') format('woff'),
+         url('./Polices_woff/ini-sans_woff/IniSans.woff2') format('woff2');
+}
+
+
+/* Header */
+
+header {
+    color: #091740;
+    display: flex;
+    height: 172px;
+    background-color: #091740;
+    justify-content: space-around;
+}
+
+.div1header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.div2header {
+    display: flex;
+    flex-direction: column;
+        justify-content: flex-end;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+header li {
+    margin:0em 2em;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 3.5em;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+header a {
+    color: #091740;
+    text-decoration: none;
+}
+
+header p {
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 0;
+    padding: 5px 10px;
+    background-color: #868EA6;
+    text-align: center;
+}
+
+header p:hover, .current {
+    background-color: #F2F2F2;
+}
+
+
+/* Corp de la page */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+main {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: inline-block;
+    border-radius: 10px;
+}
+
+p {
+    font-family: Exo, Arial, sans-serif;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Coolvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+/* Section Acteurs */
+
+#acteur div div {
+    background-color: #868EA6;
+    width: 30%;
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+
+}
+
+#acteur p {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#acteur img {
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+/* Bande anonce */
+
+img.trailer {
+    display: block;
+    margin: 50px auto;
+    width: 80%;
+}
+
+
+/* Section Extraits */
+
+#extraits section {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#extraits div {
+    position: relative;
+}
+
+#extraits section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F2F2F2);
+}
+
+#extraits section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #F2F2F2);
+}
+
+#extraits img {
+    height: 300px;
+    margin: 20px;
+}
+
+
+/* Section Photos */
+
+#photos section {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#photos img {
+    margin: 20px;
+    height: 400px;
+}
+
+#photos div {
+    position: relative;
+}
+
+#photos section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F2F2F2);
+}
+
+#photos section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #F2F2F2);
+}
+
+
+/* Section Episode */
+
+#episodes section {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#episodes div div {
+    display: inline-block;
+    width: 300px;
+    background-color: #868EA6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+#episodes img {
+    width: 100%;
+}
+
+#episodes div div:hover {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 10px 10px 10px #070E26;
+}
+
+#episodes div div div:hover {
+    box-shadow: none;
+    right: 0;
+    bottom: 0;
+}
+
+#episodes p {
+    height: 250px;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 20px 0;
+}
+
+#episodes > div,
+#episodes div div div {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#episodes section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F2F2F2);
+    z-index: 1;
+}
+
+#episodes section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #F2F2F2);
+}
+
+#episodes p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), #868EA6);
+}
+
+#episodes p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #868EA6);
+}
+
+
+/* Affichage sur mobile */
+
+@media screen and (max-width: 1400px) {
+
+    #acteur div div {
+        width: 45%;
+    }
+
+    img.trailer {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    
+    #acteur section {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    #acteur div div {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 400px;
+        margin: 0 20px;
+    }
+
+    #acteur > div {
+        position: relative;
+    }
+    
+    #acteur section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #F2F2F2);
+    }
+    
+    #acteur section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #F2F2F2);
+    }    
+
+    img.trailer {
+        width: 100%;
+    }
+
+    #resume {
+        order: 99;
+    }
+}
+
+
+/*Footer*/  
+footer {
+    
+    background-color: #091740;
+    display: flex;
+    height: 204px;
+}
+.image-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: #F2F2F2;
+}
+footer div table th  {
+    padding:0 3em;
+    color: #F2F2F2;
+}
+footer div table {
+    display: flex;
+    bottom: 10px;
+}
+footer p {
+    margin-top: 2em;
+    font-family: "Exo";
+}
+
