@@ -109,6 +109,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.changement_saison {
+    margin: 1em auto;
+}
+
+.changement_saison a {
+    background-color: #868EA6;
+    color: black;
+    display: inline-block;
+    width: 10em;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 1em;
+    font-family: Exo, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.changement_saison a:hover {
+    background-color: #091740;
+    color: white;
+}
+
+.changement_saison p {
+    background-color: #C0C0C0;
+    color: #7F7F7F;
+    display: inline-block;
+    width: 10em;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0.5em;
+}
+
+
 /* Section Acteurs */
 
 #acteur div div {
@@ -371,6 +407,10 @@ img.trailer {
     }
 
     #resume {
+        order: 98;
+    }
+
+    .changement_saison {
         order: 99;
     }
 }
