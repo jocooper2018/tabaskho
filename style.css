@@ -1,85 +1,269 @@
-
-/* Polices */
-
-@font-face {
-    font-family: "Coolvetica";
-    src: url('./Polices_woff/coolvetica_woff/coolveticarg.woff') format('woff'),
-         url('./Polices_woff/coolvetica_woff/coolveticarg.woff2') format('woff2');
+html{
+    height: 400px;
 }
-  
-@font-face {
-    font-family: "Exo";
-    src: url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff') format('woff'),
-         url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff2') format('woff2');
+body{
+    margin: 0;
+    background-color: #f2f2f2;
 }
-  
-@font-face {
-    font-family: "IniSans";
-    src: url('./Polices_woff/ini-sans_woff/IniSans.woff') format('woff'),
-         url('./Polices_woff/ini-sans_woff/IniSans.woff2') format('woff2');
+.detailsaison{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
 }
-
-
-/* Header */
-
-header {
+header{
     color: #091740;
     display: flex;
     height: 172px;
     background-color: #091740;
     justify-content: space-around;
 }
-
-.div1header {
+.div1header{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-
-.div2header {
+.div2header{
     display: flex;
     flex-direction: column;
-        justify-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
 }
-
-header ul {
+.ulheader{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     padding: 0;
     margin-bottom: 0;
     list-style-type: none;
 }
+.ulheader>li{
+    background-color: #091740;
+    padding: 0;
+    margin: 0;
+    font-size: auto;
 
-header li {
-    margin:0em 2em;
 }
-
-header h1 {
+.h1blanc{
     margin-bottom: 0;
     font-size: 3.5em;
+    font-family: "Coolvetica";
     color: #f2f2f2;
     text-align: center;
 }
+.h1bleue{
+    margin-bottom: 0;
+    font-size: 3.5em;
+    font-family: "Coolvetica";
+    color: #091740;
+    text-align: center;
+}
+.h2bleue{
+    font-size: 3em;
+    font-family: "Coolvetica";
+    color: #091740;
+    margin: 0;
+}
+.h2blanc{
+    font-size: 3em;
+    font-family: "Coolvetica";
+    color: #f2f2f2;
+    margin: 0;
+}
+h3{
+    font-size: 2em;
+    font-family: "Coolvetica";
+    color: #091740;
+    margin: 0;
+}
+h4{
+    text-align: center;
+    font-family: "Coolvetica";
+    color: #091740;
+  }
+  
+h5,article,p{
+    font-family: "exo";
+    color: #091740;
+    font-weight: bold;
+}
 
-header a {
+a{
     color: #091740;
     text-decoration: none;
 }
-
-header p {
+.pheader{
     border-radius: 5px 5px 0px 0px;
-    margin-bottom: 0;
+    font-family: "Exo";
+    font-weight: bold;
     padding: 5px 10px;
     background-color: #868EA6;
     text-align: center;
+    margin:0em 2em;
+    font-size: 15px;
+    
+}
+.pheader:hover{
+    background-color: #f2f2f2;
+}
+.actuel{
+    background-color: #f2f2f2;
+}
+.articleflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+}
+.deroule{
+    display: none;
+    background-color: #091740;
+    padding: 0;
+}
+.sous{
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    font-size: 1.75vw;
+    align-items: flex-start;
+    background-color: #868EA6;
+    position:absolute;
+    left: 0px;
+    top: 172px;
+    z-index: 300;
+}
+.sous li a{
+    color: #F2F2F2;
+}
+nav:hover .sous{
+    display: flex;
+}
+nav ul {
+    padding: 0;
+}
+nav{
+    height: 172px;
+}
+.wrap{
+    text-align: center;
+    flex-wrap: wrap;
+}
+.articleflex>img{
+    width: 60%;
+}
+article{
+    margin: 10px;
 }
 
-header p:hover, .current {
-    background-color: #F2F2F2;
+.articledegrade{
+    border-radius: 20px;
+    background: linear-gradient(#091740,80%,#394A97);
+    margin: 3em 0;
+    padding: 3em;
+}
+
+.pbleue{
+    color: #091740;
+    font-family: "Exo";
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.pblanc{
+    color: #f2f2f2;
+    font-family: "Exo";
+    text-align: start;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.min{
+    font-size: 1.5vw;
+    
+}
+table{
+    color: #091740;
+    font-family: "Exo";
+    font-weight: bold;
+}
+.divnote{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+.etoile{
+    width: 3vw;
+    height: 3vw;
+}
+
+.divnote>p{
+    font-family: "Coolvetica";
+    font-size: 2vw;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #868EA6;
+}
+
+.p_min{
+    color: #868EA6;
+    font-family: "Exo";
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+video{
+    border-radius: 20px;
+    width: 40vw;
+    height: auto;
+    margin-top: 3em;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin:32px auto;
+}
+li{
+    background-color: #394A97;
+    padding: 1em 2em;
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-family: "Exo";
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.block-total{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.block-total>div{
+    background-color: #f2f2f2;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 1em;
+}
+.pblock{
+    color: #091740;
+    font-family: "Exo";
+    font-weight: bold;
+    margin: 16px 30px;
+    text-align: center;
+}
+figure>img{
+    width: 15vw;
 }
 
 
-/* Corp de la page */
+
+/* css details_saison */
 
 body {
     padding: 0;
@@ -88,7 +272,7 @@ body {
 }
 
 main {
-    margin: 50px;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -101,11 +285,6 @@ img {
 p {
     font-family: Exo, Arial, sans-serif;
     font-weight: bold;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Coolvetica, Arial, sans-serif;
-    font-weight: lighter;
 }
 
 
@@ -415,32 +594,233 @@ img.trailer {
     }
 }
 
+/* avis critique */
 
-/*Footer*/  
-footer {
+.title{
+    display: flex;
+    justify-content: center;}
+
+.Fblanc{
+   background-color: #394A97;
+   color: #F2F2F2;
+   font-size: 2vw;
+   text-align: center;
+   margin:  0.9vw 10vw;
+   border-radius: 11px;
+}
+  .p1{
+    font-family: "IniSans";
+    font-size: 3vw;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0.5em;
     
+  }
+  .user:hover{color: #F2F2F2;
+    background-color: #091740;
+    padding: 0.5em;
+  border-radius: 5px;}
+.user{color: #F2F2F2;}
+
+  
+  main{
+    background-color: #f2F2F2;
+    
+  }
+  
+  .presse_spectateur{
+    display: flex;
+    justify-content: space-around;
+  }
+  .presse {
+    width: 40%;
+    padding: 0.5em;
+    
+    
+  }
+  .presse div{
+    padding: 0.5em;
+    background-color: #868EA6;
+    border-radius:11px ;
+    overflow-y: scroll;
+    height: 30vw;
+  
+    
+  } 
+  .bouton{
+    background-color:#7CB4E8 ;
+    color: #F2F2F2;
+    padding: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "IniSans";
+    
+    
+  }
+  .bouton:hover{
+    background-color: #091740;
+    color: #F2F2F2;
+  }
+  .place{
+    display:flex;
+    justify-content: flex-end;
+    height: 50px;
+  
+  }
+  .spectateur{
+    
+    width: 40%;
+    padding: 0.5em;
+    
+  }
+  .spectateur div{
+  background-color: #868EA6;
+  border-radius:11px ;
+  padding: 0.5em;
+  
+  }
+  .spectateur div div {
+    display : flex;
+    justify-content: center;;
+  }
+  .avis{display: flex;}
+  
+  .test {
+    height: 250px;
+    width:100% ;
+  }
+  .test img{
+    height: 100%;
+    width: 100%;
+  }
+  .avis p {line-height: 2.8em;}
+  
+  
+  .partie2{
+    background: linear-gradient(#394A97, #091740);
+    display: flex;
+    
+  }
+  .partie2 div{
+    width: 50%;
+    padding: 1em;
+  }
+  .partie2 div div{
+    display: flex;
+    padding :0.5em;
+  }
+  .Ellipse{
+    width: 10vw;
+    height: 10vw;
+  }
+  .partie2 div div p a{
+    position:relative;
+    top: 1.5em;
+    left:0.3em;
+    color: F2F2F2;
+    text-decoration: underline;
+  }
+  .commentNonVerif{
+    background-color: #868EA6;
+    display: flex;
+  }
+  .commentNonVerif div {
+    width: 50%;
+    display: block;
+  }
+  .name{
+    padding: 0 56px 0 0; 
+  }
+  .add{
+    margin: 10px 0 0 0;
+    
+  }
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    justify-content: center;
     background-color: #091740;
     display: flex;
-    height: 204px;
-}
-.image-centre {
+    height: 20%;
+  }
+  .image-centre{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-footer p {
+  }
+  footer p{
     color: #F2F2F2;
-}
-footer div table th  {
-    padding:0 3em;
+  }
+  footer div table th{
+    padding:0 5vw;
     color: #F2F2F2;
-}
-footer div table {
+  }
+  footer div table{
+    justify-content: center;
     display: flex;
     bottom: 10px;
-}
-footer p {
+  }
+  .footer-P{
     margin-top: 2em;
     font-family: "Exo";
+    background-color: #091740;
+  }
+  .star {
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+  }
+
+  .star.selected {
+    color: gold;
+  }
+  @media screen and (max-width: 1050px) {
+    footer div table th{
+        padding:0 1.5vw;
+      }
+      .footer-P{
+        margin-top: 1em;
+      }
+  }
+
+
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url('./Polices_woff/coolvetica_woff/coolveticarg.woff') format('woff'),
+         url('./Polices_woff/coolvetica_woff/coolveticarg.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: "Exo";
+    src: url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff') format('woff'),
+         url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "IniSans";
+    src: url('./Polices_woff/ini-sans_woff/IniSans.woff') format('woff'),
+         url('./Polices_woff/ini-sans_woff/IniSans.woff2') format('woff2');
+}
+@media (max-width:1050px){
+    .pheader{
+        display: none;
+    }
+    .div1header{
+        display: none;
+    }
+    header{
+        align-items: center;
+    }
+    .deroule{
+        display: flex;
+    }
+}
