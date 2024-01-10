@@ -102,6 +102,7 @@ a{
     font-size: 15px;
     
 }
+
 .pheader:hover{
     background-color: #f2f2f2;
 }
@@ -735,6 +736,430 @@ img.trailer {
     margin: 10px 0 0 0;
     
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** PRESENTATIONS SAISONS **/
+/*librairie*/
+.lineaire-simple {
+    background: linear-gradient(#394A97, #091740);
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url('./Polices_woff/coolvetica_woff/coolveticarg.woff') format('woff'),
+       url('./Polices_woff/coolvetica_woff/coolveticarg.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff') format('woff'),
+       url('./Polices_woff/Exo_woff/Exo-VariableFont_wght.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "IniSans";
+  src: url('./Polices_woff/ini-sans_woff/IniSans.woff') format('woff'),
+       url('./Polices_woff/ini-sans_woff/IniSans.woff2') format('woff2');
+}
+
+/*** MAIN ***/
+
+.main_pres_s {
+    /*old*/
+    margin: unset;
+    display: unset;
+    flex-direction: unset;
+
+    margin: 0;
+    background-color: #F2F2F2;
+}
+
+.art_saisons {
+    /*old*/
+    margin: unset;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(#868EA6, #091740);
+    color: white;
+    padding: 20px 20px 20px 20px;
+    }
+
+.art_transi{
+  background: linear-gradient(#091740, #868EA6)
+}
+
+.art_saisons h2 {
+  font-family: "Coolvetica";
+  color: black;
+  font-weight: lighter;
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+}
+
+.art_saisons h3 {
+  font-weight: bolder;
+}
+
+.img_eps_res {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 10fr 3fr;
+  justify-content: space-around;
+  font-family: 'Exo';
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.img_eps {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  background: #F2F2F2;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;/
+}
+
+.img_eps img {
+    /*old*/
+    display: unset;
+    border-radius: unset;
+
+    width: 90%;
+    justify-self: center;
+    height: max-content;
+    border-radius: 15px;
+}
+
+.img_eps ul {
+    /*old*/
+    display: unset;
+    flex-direction: unset;
+    flex-wrap: unset;
+    justify-content: unset;
+    list-style-type: unset;
+    margin: unset;
+
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.8vw;
+}
+
+.img_eps ul li {
+    /*old*/
+    background-color: unset;
+    padding: unset;
+    border-radius: unset;
+    color: unset;
+    font-family: unset;
+    font-weight: unset;
+    font-size: unset;
+    margin: unset;
+
+    margin-left: 50px;
+}
+
+.Title_eps{
+    margin-left: 50px;
+}
+
+.img_eps ul li p {
+  margin-left: 30px; /* Ajustez la valeur */
+}
+
+
+.img_eps_res h3 {
+    /*old*/
+    font-size: unset;
+
+    font-size: 3vw;
+
+  text-decoration: underline;
+}
+
+.res {
+  box-sizing: border-box;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px 50px 50px;
+  background-color: #F2F2F2;
+  color: black;
+  border-radius: 15px;
+  font-size: 1.5vw;
+}
+
+.res h4{
+  text-decoration: underline;
+  margin: 0px;
+}
+
+#popup-content > h4 {
+  text-decoration: underline;
+  margin: 0px;
+}
+
+.res button {
+  background-color: #091740;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.res button:hover {
+  background-color: #394A97;
+  transform: scale(1.05); /* Augmente la taille du bouton */
+}
+
+
+.actors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  justify-content: space-around;
+  color: black;
+  font-family: 'Exo';
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.actors img {
+  width: 50%;
+}
+
+/* Popup container */
+.popup1, .popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+/* Style pour le fond semi-transparent du popup */
+#popup-background, #popup-background2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Style pour le popup lui-même */
+#popup-content, #popup-content2 {
+  display: none;
+  position: fixed;
+  width: 80%;
+  top: 45%;
+  left: 50%;
+  transition: all 0.5s;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*animation*/
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+#popup-content, #popup-content2 h4{
+    font-size: 2vw;
+}
+  
+#popup-content.show, #popup-content2.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 980px){
+  #popup-content, #popup-content2 {
+    overflow-y: scroll;
+    width: 80%;
+  }
+}
+
+
+/* Style pour le bouton de fermeture */
+#close-button, #close-button2 {
+  position: absolute;
+  font-size: 2vw;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#close-button:hover, #close-button2:hover {
+  transform: scale(0.90); /* Réduit la taille du bouton */
+}
+
+
+@media screen and (max-width: 1024px){
+  .img_eps_res {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .res {
+    margin-top: 20px;
+    font-size: 2vw;
+  }
+
+  .img_eps{
+    display: flex;
+    /*Centrer les objets*/
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .img_eps img {
+    width: 60%;
+    justify-self: center;
+    height: max-content;
+    border-radius: 15px;
+  }
+
+  .img_eps ul {
+    /*old*/
+    display: unset;
+    flex-direction: unset;
+    flex-wrap: unset;
+    justify-content: unset;
+    list-style-type: unset;
+    margin: unset;
+
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    font-size: 2.2vw;
+  }
+
+  /*.img_eps ul {
+
+    font-size: 0.8em;
+  }
+  */
+
+}
+
+@media screen and (max-width: 1400px) {
+  .res {
+    padding: 10px 40px 40px 40px;
+  }
+
+  .art_saisons h2 {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .res {
+    padding: 5px 30px 30px 30px;
+  }
+
+  .art_saisons h2 {
+    font-size: 2em;
+  }
+
+}
+/* FIN PRESENTATION SAISON */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
