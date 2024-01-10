@@ -1003,7 +1003,7 @@ body {
   display: none;
   position: fixed;
   width: 80%;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transition: all 0.5s;
   transform: translate(-50%, -50%);
@@ -1050,6 +1050,35 @@ body {
 
 
 @media screen and (max-width: 1024px){
+
+  .res h3{
+    font-size: 3vw;
+  }
+
+  .res h4{
+    font-size: 2.5vw;
+  }
+
+  .res p{
+    font-size: 2.5vw;
+  }
+
+  #popup-content, #popup-content2 h3{
+    font-size: 4vw;
+  }
+
+  #popup-content, #popup-content2 h4{
+    font-size: 3vw;
+  }
+
+  #popup-content, #popup-content2 p{
+    font-size: 3vw;
+  }
+    
+  #popup-content.show, #popup-content2.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
   .img_eps_res {
     display: flex;
     flex-direction: column;
