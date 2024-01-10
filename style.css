@@ -100,7 +100,7 @@ a{
     text-align: center;
     margin:0em 2em;
     font-size: 15px;
-    
+    display: inline-block;
 }
 
 .pheader:hover{
