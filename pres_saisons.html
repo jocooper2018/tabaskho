@@ -99,6 +99,9 @@
                         function afficherPopup() {
                             document.getElementById('popup-background').style.display = 'block';
                             document.getElementById('popup-content').style.display = 'block';
+                            setTimeout(() => {
+                                document.getElementById('popup-content').classList.add('show');
+                            }, 0);
                         }
 
                         // Fonction pour fermer le popup
@@ -169,14 +172,14 @@
                         <h4>Épisode 2 :</h4>
                         <p>Une femme se réveille sans se souvenir de son passé et découvre un monde étrange où les gens filment constamment tout ce qui se passe. Elle est poursuivie par des mystérieux poursuivants...</p>
                     </div>
-                    <button onclick="afficherPopup()">Voir Plus</button>
+                    <button onclick="afficherPopup2()">Voir Plus</button>
 
                     <!-- Fond semi-transparent du popup -->
                     <div id="popup-background2"></div>
 
                     <!-- Contenu du popup -->
                     <div id="popup-content2">
-                        <span id="close-button2" onclick="fermerPopup()">✖️</span>
+                        <span id="close-button2" onclick="fermerPopup2()">✖️</span>
                         <h3>Résumé :</h3>
                         <h4>Épisode 1 :</h4>
                         <p>
@@ -198,7 +201,7 @@
 
                     <script>
                         // Fonction pour afficher le popup
-                        function afficherPopup() {
+                        function afficherPopup2() {
                             document.getElementById('popup-background2').style.display = 'block';
                             document.getElementById('popup-content2').style.display = 'block';
                             setTimeout(() => {
@@ -207,7 +210,7 @@
                         }
 
                         // Fonction pour fermer le popup
-                        function fermerPopup() {
+                        function fermerPopup2() {
                             document.getElementById('popup-background2').style.display = 'none';
                             document.getElementById('popup-content2').classList.remove('show');
                         }
