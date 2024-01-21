@@ -1331,6 +1331,15 @@ footer{
 
 /* backstage */
 
+main.backstage {
+  display: unset;
+}
+
+main.backstage nav {
+  height: unset;
+  margin-top: 4vw;
+}
+
 #sectCoulisseInterview > article > h1{
     font-family: Coolvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -1371,17 +1380,19 @@ main > #sectCoulisseInterview > article > h1{
     color: #070e26;
 }
 
-main nav > #secondMenu > li   {
-    padding: 3% 9%; 
-    background-color: #070e26;
+main nav > #secondMenu > li {
+    padding: unset;
+    background-color: unset;
     color: hsl(0, 0%, 95%);
-    border-radius: 15px;
-    font-size: 3vw; 
     margin: 0 2%;
     white-space: nowrap;
 }
 main nav > #secondMenu > li > a   {
+    border-radius: 15px;
+    font-size: 3vw; 
+    background-color: #070e26;
     color: hsl(0, 0%, 95%);
+    padding: 1em 2em;
 }
 main > #sectCoulisseInterview > article > figure img{
     width : 35vw;
