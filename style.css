@@ -174,7 +174,7 @@ article{
     color: #f2f2f2;
     font-family: "Exo";
     text-align: start;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: 700;
 }
 .min{
@@ -1150,6 +1150,26 @@ body {
   }
   */
 
+}  @media screen and (max-width: 1050px) {
+  /*main*/
+  .presse_spectateur{
+    display: block;
+  }
+  .presse{
+    width: 95%;
+  }
+  .spectateur{
+    width: 95%;
+  }
+  .partie2{
+    display : block;
+  }
+  .partie2 div {
+    width: 95%;
+  }
+  .pblanc{
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1234,6 +1254,7 @@ footer{
     justify-content: center;
     align-items: center;
   }
+  
   footer p{
     color: #F2F2F2;
   }
@@ -1266,6 +1287,10 @@ footer{
       }
       .footer-P{
         margin-top: 1em;
+      }
+      .image-centre img{
+        width: 20vw;
+        height: 20vw;
       }
   }
 
@@ -1306,15 +1331,6 @@ footer{
 
 /* backstage */
 
-main.backstage {
-    display: unset;
-}
-
-main.backstage nav {
-    height: unset;
-    margin-top: 4vw;
-}
-
 #sectCoulisseInterview > article > h1{
     font-family: Coolvetica, Arial, sans-serif;
     font-weight: lighter;
@@ -1333,7 +1349,7 @@ main > #sectCoulisseInterview > article{
     text-align: center;
     color: white;
     background-color: #070e26;
-    margin: 0 25px;
+    margin:0 25px;
     border-radius: 20px;
 }
 main > #sectCoulisseInterview > article > h1{
@@ -1355,19 +1371,17 @@ main > #sectCoulisseInterview > article > h1{
     color: #070e26;
 }
 
-main nav > #secondMenu > li  {
-    padding: unset;
-    background-color: unset;
+main nav > #secondMenu > li   {
+    padding: 3% 9%; 
+    background-color: #070e26;
     color: hsl(0, 0%, 95%);
+    border-radius: 15px;
+    font-size: 3vw; 
     margin: 0 2%;
     white-space: nowrap;
 }
 main nav > #secondMenu > li > a   {
-    border-radius: 15px;
-    font-size: 3vw; 
-    background-color: #070e26;
     color: hsl(0, 0%, 95%);
-    padding: 1em 2em;
 }
 main > #sectCoulisseInterview > article > figure img{
     width : 35vw;
@@ -1442,4 +1456,22 @@ main nav > #secondMenu{
         font-size: 35px;
         margin: 5px 0;
     }
+}
+@media screen and (max-width: 1050px) {
+  /*main*/
+  .presse_spectateur{
+    display: block;
+  }
+  .presse{
+    width: 95%;
+  }
+  .spectateur{
+    width: 95%;
+  }
+  .partie2{
+    display : block;
+  }
+  .partie2 div {
+    width: 95%;
+  }
 }
